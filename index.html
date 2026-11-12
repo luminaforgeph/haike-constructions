@@ -13,33 +13,45 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <script>
-    tailwind.config = { theme: { extend: { colors: { ink:'#070A10', steel:'#0E1420', blue:'#173B8F', purple:'#7137B8', red:'#C62828', white:'#FFFFFF', amber:'#173B8F', muted:'#8B96A8' }, fontFamily: { display:['Space Grotesk','sans-serif'], body:['Inter','sans-serif'], mono:['JetBrains Mono','monospace'] } } } };
+    tailwind.config = { theme: { extend: { colors: { ink:'#070A10', steel:'#0D111A', blue:'#173B8F', purple:'#7137B8', red:'#C62828', white:'#FFFFFF', amber:'#F59E0B', muted:'#8B96A8' }, fontFamily: { display:['Space Grotesk','sans-serif'], body:['Inter','sans-serif'], mono:['JetBrains Mono','monospace'] } } } };
   </script>
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Haike Constructions Limited | Engineered to Endure</title>
   <style>
-    :root{color-scheme:dark;--ink:#070A10;--steel:#0E1420;--blue:#173B8F;--purple:#7137B8;--red:#C62828;--white:#FFFFFF;--amber:var(--blue);--line:rgba(255,255,255,.09);--muted:#9AA5B5}
+    :root{color-scheme:dark;--ink:#070A10;--steel:#0D111A;--blue:#173B8F;--purple:#7137B8;--red:#C62828;--white:#FFFFFF;--amber:#F59E0B;--line:rgba(255,255,255,.08);--muted:#9AA5B5}
     *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--ink);color:#F8FAFC;font-family:Inter, sans-serif;overflow-x:hidden}body.drawer-open{overflow:hidden}
     ::selection{background:var(--amber);color:#111} :focus-visible{outline:2px solid var(--amber);outline-offset:4px}
     .mono{font-family:'JetBrains Mono',monospace;font-variant-numeric:tabular-nums}.display{font-family:'Space Grotesk',sans-serif}
-    .hairline{border:1px solid var(--line)}.surface{background:var(--steel);border:1px solid var(--line)}
+    .hairline{border:1px solid var(--line)}.surface{background:#0D111A;border:1px solid rgba(255,255,255,.08)}
+    h1,h2,h3,h4,h5,h6{font-family:'Space Grotesk',sans-serif;letter-spacing:-.045em;line-height:1.05}
+    .metric,.mono,output{font-family:'JetBrains Mono',monospace;font-variant-numeric:tabular-nums lining-nums}
+    .editorial-rule{border-color:rgba(255,255,255,.08)}
+    .micro-label{font:500 .62rem 'JetBrains Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:#A5AFBE}
+    .interactive{transition:all .3s cubic-bezier(.16,1,.3,1)}
+    button,a,[role=button],input,select,textarea{ -webkit-tap-highlight-color:transparent }
+    button,a,[role=button]{touch-action:manipulation}
+    section{scroll-margin-top:88px}
+    @media(min-width:768px){.editorial-inset{padding-left:clamp(2rem,5vw,5.5rem);padding-right:clamp(1.5rem,3vw,3rem)}}
+    @media(max-width:767px){.filter{min-height:44px}.range{height:44px}.btn{min-height:48px}}
+    html,body{max-width:100%;overflow-x:clip}
+    img,svg,video,canvas{max-width:100%}
     .blueprint{background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);background-size:64px 64px,64px 64px,16px 16px,16px 16px}
     .hero-wash{background:radial-gradient(ellipse at 78% 42%,rgba(113,55,184,.22),transparent 34%),radial-gradient(ellipse at 18% 78%,rgba(23,59,143,.22),transparent 38%),linear-gradient(110deg,#070A10 8%,rgba(7,10,16,.94) 48%,rgba(7,10,16,.65) 100%)}
-    .btn{min-height:48px;display:inline-flex;align-items:center;justify-content:center;gap:.65rem;padding:.85rem 1.1rem;font-size:.78rem;font-weight:600;letter-spacing:.02em;transition:transform .35s cubic-bezier(.16,1,.3,1),background .25s,border-color .25s,color .25s}.btn:hover{transform:translateY(-2px)}.btn-primary{background:var(--blue);color:#fff;border:1px solid var(--blue)}.btn-primary:hover{background:#244FA8;border-color:#244FA8}.btn-red{background:var(--red);color:#fff;border:1px solid var(--red)}.btn-red:hover{background:#A51F25;border-color:#A51F25}.btn-purple{background:var(--purple);color:#fff;border:1px solid var(--purple)}.btn-purple:hover{background:#5C2B99;border-color:#5C2B99}.btn-outline{border:1px solid rgba(255,255,255,.22);color:#fff}.btn-outline:hover{border-color:var(--purple);color:#C9B4EA}
-    .nav-link{font-size:.76rem;color:#B8C0CC;transition:color .2s}.nav-link:hover,.nav-link[aria-current=page]{color:#B69AE2}
+    .btn{min-height:48px;display:inline-flex;align-items:center;justify-content:center;gap:.65rem;padding:.85rem 1.1rem;font-size:.78rem;font-weight:600;letter-spacing:.02em;transition:all .3s cubic-bezier(.16,1,.3,1)}.btn:hover{transform:translateY(-2px)}.btn-primary{background:var(--blue);color:#fff;border:1px solid var(--blue)}.btn-primary:hover{background:#244FA8;border-color:#244FA8}.btn-red{background:var(--red);color:#fff;border:1px solid var(--red)}.btn-red:hover{background:#A51F25;border-color:#A51F25}.btn-purple{background:var(--purple);color:#fff;border:1px solid var(--purple)}.btn-purple:hover{background:#5C2B99;border-color:#5C2B99}.btn-outline{border:1px solid rgba(255,255,255,.22);color:#fff}.btn-outline:hover{border-color:var(--purple);color:#C9B4EA}
+    .nav-link{font-size:.76rem;color:#B8C0CC;transition:all .3s cubic-bezier(.16,1,.3,1)}.nav-link:hover,.nav-link[aria-current=page]{color:#B69AE2}
     .menu-panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s cubic-bezier(.16,1,.3,1)}.menu-panel>div{overflow:hidden}.menu-panel.open{grid-template-rows:1fr}
     .range{appearance:none;width:100%;height:5px;background:linear-gradient(90deg,var(--amber) 0%,var(--amber) var(--progress,0%),#303948 var(--progress,0%),#303948 100%);outline:none;cursor:pointer;touch-action:pan-y}.range::-webkit-slider-thumb{appearance:none;width:22px;height:22px;border-radius:0;background:var(--amber);border:3px solid #171D27;box-shadow:0 0 0 1px var(--amber)}.range::-moz-range-thumb{width:17px;height:17px;border-radius:0;background:var(--amber);border:3px solid #171D27;box-shadow:0 0 0 1px var(--amber)}
-    .field{width:100%;min-height:48px;background:#090E17;border:1px solid rgba(255,255,255,.13);padding:.75rem .85rem;color:#F8FAFC;border-radius:0;font:inherit;font-size:.85rem}.field:focus{outline:1px solid var(--amber);border-color:var(--amber)}select.field{color-scheme:dark}
-    .filter{min-height:44px;padding:.65rem .95rem;border:1px solid var(--line);font-size:.72rem;color:#B7C0CC;transition:all .2s}.filter.active,.filter:hover{background:var(--amber);border-color:var(--amber);color:#111}
-    .project-card{transition:opacity .25s,transform .35s cubic-bezier(.16,1,.3,1)}.project-card[hidden]{display:none}.project-card:hover{transform:translateY(-4px)}
+    .field{width:100%;min-height:48px;background:#090D15;border:1px solid rgba(255,255,255,.13);padding:.75rem .85rem;color:#F8FAFC;border-radius:0;font:inherit;font-size:.85rem}.field:focus{outline:1px solid var(--amber);border-color:var(--amber)}select.field{color-scheme:dark}
+    .filter{min-height:44px;padding:.65rem .95rem;border:1px solid var(--line);font-size:.72rem;color:#B7C0CC;transition:all .3s cubic-bezier(.16,1,.3,1)}.filter.active,.filter:hover{background:var(--amber);border-color:var(--amber);color:#111}
+    .project-card{transition:all .3s cubic-bezier(.16,1,.3,1)}.project-card[hidden]{display:none}.project-card:hover{transform:translateY(-4px)}
     .schematic{background:linear-gradient(145deg,#111B2A,#0A101A);min-height:190px;position:relative;overflow:hidden}.schematic:after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:24px 24px;pointer-events:none}
-    .road-line{stroke:var(--amber);stroke-width:2;fill:none;stroke-dasharray:5 5}.blue-line{stroke:#8295AD;stroke-width:1.4;fill:none}.dim{stroke:#65758A;stroke-width:1;fill:none}
+    .road-line{stroke:var(--purple);stroke-width:2;fill:none;stroke-dasharray:5 5}.blue-line{stroke:#8295AD;stroke-width:1.4;fill:none}.dim{stroke:#65758A;stroke-width:1;fill:none}
     .stage{border-left:2px solid #394455;padding:0 0 1.1rem 1rem;position:relative}.stage:before{content:"";position:absolute;width:8px;height:8px;background:#566274;left:-5px;top:3px}.stage.active{border-color:var(--purple)}.stage.active:before{background:var(--purple);box-shadow:0 0 12px rgba(113,55,184,.55)}
-    .drawer{position:fixed;inset:0;z-index:80;visibility:hidden;pointer-events:none}.drawer.open{visibility:visible;pointer-events:auto}.drawer-backdrop{position:absolute;inset:0;background:rgba(0,0,0,.72);opacity:0;transition:opacity .3s}.drawer.open .drawer-backdrop{opacity:1}.drawer-panel{position:absolute;right:0;top:0;height:100%;height:100dvh;width:min(100%,560px);overflow:auto;background:#0B111B;border-left:1px solid var(--line);transform:translateX(102%);transition:transform .45s cubic-bezier(.16,1,.3,1);padding:1.25rem;padding-bottom:max(1.25rem,env(safe-area-inset-bottom))}.drawer.open .drawer-panel{transform:translateX(0)}
+    .drawer{position:fixed;inset:0;z-index:80;visibility:hidden;pointer-events:none}.drawer.open{visibility:visible;pointer-events:auto}.drawer-backdrop{position:absolute;inset:0;background:rgba(0,0,0,.72);opacity:0;transition:all .3s cubic-bezier(.16,1,.3,1)}.drawer.open .drawer-backdrop{opacity:1}.drawer-panel{position:absolute;right:0;top:0;height:100%;height:100dvh;width:min(100%,560px);overflow:auto;background:#0D111A;border-left:1px solid var(--line);transform:translateX(102%);transition:transform .45s cubic-bezier(.16,1,.3,1);padding:1.25rem;padding-bottom:max(1.25rem,env(safe-area-inset-bottom))}.drawer.open .drawer-panel{transform:translateX(0)}
     .eyebrow{font:600 .65rem 'JetBrains Mono',monospace;letter-spacing:.12em;text-transform:uppercase;color:#A98BD8}.section-kicker{font:400 .66rem 'JetBrains Mono',monospace;color:#8591A2;letter-spacing:.12em;text-transform:uppercase}
     .metric{font-family:'JetBrains Mono',monospace;font-variant-numeric:tabular-nums;letter-spacing:-.06em}
     .capability{min-height:210px;position:relative;overflow:hidden}.capability:after{content:"";position:absolute;right:-34px;bottom:-55px;width:170px;height:170px;border:1px solid rgba(113,55,184,.38);transform:rotate(45deg);pointer-events:none}
-    .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s cubic-bezier(.16,1,.3,1)}.reveal.visible{opacity:1;transform:translateY(0)}
+    .reveal{opacity:0;transform:translateY(18px);transition:all .7s cubic-bezier(.16,1,.3,1)}.reveal.visible{opacity:1;transform:translateY(0)}
     .scroll-track{scrollbar-width:thin;scrollbar-color:#566274 #111722}.scroll-track::-webkit-scrollbar{height:7px}.scroll-track::-webkit-scrollbar-track{background:#111722}.scroll-track::-webkit-scrollbar-thumb{background:#566274}
     @media(min-width:768px){.hero-grid{min-height:690px}.drawer-panel{padding:2rem}.capability{min-height:250px}}
     @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}.reveal{opacity:1;transform:none}}
@@ -77,7 +89,7 @@
           <div class="max-w-[760px] relative z-10">
             <div class="inline-flex items-center gap-2 border border-amber/35 bg-amber/5 px-3 py-2 mb-7"><span class="w-2 h-2 bg-[#C62828] animate-pulse"></span><span class="mono text-[.62rem] sm:text-xs tracking-[.07em] text-blue">COREN & NSE CERTIFIED • CIVIL & STRUCTURAL ENGINEERING</span></div>
             <p class="section-kicker mb-4">Infrastructure / Engineering / Delivery — 01</p>
-            <h1 class="display text-[clamp(2.8rem,7.2vw,6.8rem)] font-bold tracking-[-.075em] leading-[.98] max-w-[850px]">Precision infrastructure<span class="text-blue">.</span><br>Landmark structures<br><span class="text-slate-400">built to endure.</span></h1>
+            <h1 class="display text-[clamp(2.8rem,7.2vw,6.8rem)] font-bold tracking-tight leading-[1.05] max-w-[850px]">Precision infrastructure<span class="text-blue">.</span><br>Landmark structures<br><span class="text-slate-400">built to endure.</span></h1>
             <p class="mt-7 max-w-[590px] text-sm sm:text-base leading-7 text-slate-300">Turnkey civil engineering, deep-foundation expertise for the Niger Delta, and accountable project delivery — from first ground investigation to final commissioning.</p>
             <div class="flex flex-col sm:flex-row gap-3 mt-8">
               <a href="#estimator" class="btn btn-primary">Launch Scope & Timeline Estimator <span>↘</span></a>
@@ -90,7 +102,7 @@
             </div>
           </div>
           <div class="relative z-10 lg:pl-4">
-            <div class="surface p-4 sm:p-5 relative">
+            <div class="surface p-5 sm:p-7 lg:p-8 relative">
               <div class="flex justify-between items-center border-b border-white/10 pb-3 mb-4"><span class="eyebrow">Engineering intelligence / 001</span><span class="mono text-[.6rem] text-slate-500">HK—SYS / LIVE</span></div>
               <svg viewBox="0 0 520 310" class="w-full" role="img" aria-label="Technical line drawing of a high-rise building and deep pile foundations">
                 <g stroke="#52647A" stroke-width="1" fill="none"><path d="M55 250H470M85 250V80h160v170M105 80V250M145 80V250M185 80V250M225 80V250M85 110h160M85 145h160M85 180h160M85 215h160"/><path d="M300 250V125h120v125M320 125v125M360 125v125M400 125v125M300 155h120M300 190h120M300 220h120"/><path d="M55 250h415M55 260h415M55 270h415" stroke-dasharray="3 5"/></g>
@@ -102,7 +114,7 @@
                 <div class="bg-black/20 p-3"><div class="mono text-[.57rem] text-slate-500">DESIGN APPROACH</div><div class="text-xs mt-1 font-medium">Ground-up precision</div></div>
                 <div class="bg-black/20 p-3"><div class="mono text-[.57rem] text-slate-500">DELIVERY FOCUS</div><div class="text-xs mt-1 font-medium">Safety / Programme / QA</div></div>
               </div>
-              <div class="absolute -right-2 -top-2 bg-amber text-black mono text-[.58rem] px-2 py-1">FIG. 01 / CONCEPT</div>
+              <div class="absolute -right-2 -top-2 bg-purple text-white mono text-[.58rem] px-2 py-1">FIG. 01 / CONCEPT</div>
             </div>
             <p class="mono text-[.58rem] text-slate-500 mt-3 text-right">ILLUSTRATIVE STRUCTURAL SCHEMATIC — NOT FOR CONSTRUCTION</p>
           </div>
@@ -115,13 +127,13 @@
 
     <section id="estimator" class="py-20 sm:py-28 border-b border-white/10">
       <div class="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
-        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10 reveal"><div><p class="eyebrow mb-3">Interactive project planning / 02</p><h2 class="display text-4xl sm:text-5xl font-bold tracking-[-.06em]">Scope before groundbreak.</h2></div><p class="text-sm leading-6 text-slate-400 max-w-md">Configure a preliminary project profile. The output is an indicative planning model — final duration and foundation design require site investigation, design development and a verified programme.</p></div>
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10 reveal"><div><p class="eyebrow mb-3">Interactive project planning / 02</p><h2 class="display text-4xl sm:text-5xl font-bold tracking-tight leading-[1.05]">Scope before groundbreak.</h2></div><p class="text-sm leading-6 text-slate-400 max-w-md">Configure a preliminary project profile. The output is an indicative planning model — final duration and foundation design require site investigation, design development and a verified programme.</p></div>
         <div class="grid lg:grid-cols-[1.05fr_.95fr] surface reveal">
-          <div class="p-5 sm:p-8 lg:p-10 border-b lg:border-b-0 lg:border-r border-white/10">
+          <div class="p-5 sm:p-8 lg:pl-12 lg:pr-8 lg:py-10 border-b lg:border-b-0 lg:border-r border-white/10">
             <div class="flex items-center justify-between mb-7"><span class="eyebrow">01 / Define project parameters</span><span class="mono text-[.6rem] text-slate-500">INPUT / 04</span></div>
             <div class="space-y-7">
               <div><label for="sector" class="block text-xs font-semibold mb-2">Sector type</label><select id="sector" class="field"><option value="highrise">Commercial High-Rise</option><option value="road">Civil Roadworks & Drainage</option><option value="warehouse">Industrial Logistics Warehouse</option><option value="estate">Luxury Residential Estate</option></select></div>
-              <div><div class="flex justify-between gap-3 items-end mb-3"><label for="scale" class="text-xs font-semibold">Project scale</label><div class="text-right"><output id="scaleValue" for="scale" class="metric text-2xl text-blue">5,000</output><span id="scaleUnit" class="mono text-[.62rem] text-slate-400 ml-2">SQM</span></div></div><input id="scale" class="range" type="range" min="500" max="25000" step="500" value="5000" aria-label="Project scale"><div class="flex justify-between mono text-[.58rem] text-slate-500 mt-3"><span id="scaleMin">500 SQM</span><span id="scaleMax">25,000 SQM</span></div></div>
+              <div><div class="flex justify-between gap-3 items-end mb-3"><label for="scale" class="text-xs font-semibold">Project scale</label><div class="text-right"><output id="scaleValue" for="scale" class="metric font-mono tabular-nums text-2xl text-blue">5,000</output><span id="scaleUnit" class="mono text-[.62rem] text-slate-400 ml-2">SQM</span></div></div><input id="scale" class="range" type="range" min="500" max="25000" step="500" value="5000" aria-label="Project scale"><div class="flex justify-between mono text-[.58rem] text-slate-500 mt-3"><span id="scaleMin">500 SQM</span><span id="scaleMax">25,000 SQM</span></div></div>
               <div><label for="terrain" class="block text-xs font-semibold mb-2">Terrain / project region</label><select id="terrain" class="field"><option value="ph">Port Harcourt / Niger Delta — high water table</option><option value="lagos">Lagos — coastal / mixed ground</option><option value="abuja">Abuja (FCT) — lateritic / rocky zones</option><option value="south">South-East Corridor — variable residual soils</option></select></div>
               <div class="border-t border-white/10 pt-5"><p class="mono text-[.6rem] text-slate-500 mb-3">MODEL ASSUMPTIONS</p><p class="text-xs text-slate-400 leading-5">Planning ranges include design coordination, procurement allowances and staged execution. They exclude client approval delays, exceptional ground remediation and statutory review periods.</p></div>
             </div>
@@ -129,8 +141,8 @@
           <div class="p-5 sm:p-8 lg:p-10 bg-[#0A1019]">
             <div class="flex items-center justify-between mb-7"><span class="eyebrow">02 / Calculated telemetry</span><span class="mono text-[.6rem] text-blue">● MODEL ACTIVE</span></div>
             <div class="grid grid-cols-2 gap-3 mb-6">
-              <div class="border border-white/10 p-4"><div class="mono text-[.58rem] text-slate-500">EST. DURATION</div><div class="metric text-3xl sm:text-4xl mt-2 text-blue"><span id="duration">14</span><span class="text-sm ml-1">MOS</span></div><p class="text-[.65rem] text-slate-500 mt-2">Indicative programme</p></div>
-              <div class="border border-white/10 p-4"><div class="mono text-[.58rem] text-slate-500">SCOPE INDEX</div><div class="metric text-3xl sm:text-4xl mt-2"><span id="scopeIndex">M</span><span class="text-sm ml-1 text-slate-400">CLASS</span></div><p class="text-[.65rem] text-slate-500 mt-2">Relative project scale</p></div>
+              <div class="border border-white/10 p-4"><div class="mono text-[.58rem] text-slate-500">EST. DURATION</div><div class="metric tabular-nums font-mono text-3xl sm:text-4xl mt-2 text-blue"><span id="duration" class="metric tabular-nums">14</span><span class="text-sm ml-1">MOS</span></div><p class="text-[.65rem] text-slate-500 mt-2">Indicative programme</p></div>
+              <div class="border border-white/10 p-4"><div class="mono text-[.58rem] text-slate-500">SCOPE INDEX</div><div class="metric tabular-nums font-mono text-3xl sm:text-4xl mt-2"><span id="scopeIndex" class="metric tabular-nums">M</span><span class="text-sm ml-1 text-slate-400">CLASS</span></div><p class="text-[.65rem] text-slate-500 mt-2">Relative project scale</p></div>
             </div>
             <div class="border border-white/10 p-4 mb-6"><div class="mono text-[.58rem] text-slate-500 mb-2">RECOMMENDED FOUNDATION APPROACH</div><div id="foundation" class="display text-lg font-semibold">Deep bored concrete piling</div><p id="foundationNote" class="text-xs text-slate-400 mt-2 leading-5">Preliminary option for soft alluvial deposits and elevated groundwater conditions; confirm through geotechnical investigation.</p></div>
             <div class="mb-7"><div class="flex justify-between items-center mb-4"><span class="mono text-[.6rem] text-slate-400">EXECUTION ROADMAP</span><span class="mono text-[.58rem] text-slate-600">04 STAGES</span></div><div id="roadmap" class="grid grid-cols-2 sm:grid-cols-4 gap-x-3 gap-y-4"><div class="stage active"><div class="mono text-[.58rem] text-blue">01</div><div class="text-[.67rem] mt-1">Geotech & Survey</div></div><div class="stage active"><div class="mono text-[.58rem] text-blue">02</div><div class="text-[.67rem] mt-1">Substructure & Piling</div></div><div class="stage"><div class="mono text-[.58rem] text-slate-500">03</div><div class="text-[.67rem] mt-1">Superstructure</div></div><div class="stage"><div class="mono text-[.58rem] text-slate-500">04</div><div class="text-[.67rem] mt-1">MEP & Commissioning</div></div></div></div>
@@ -179,7 +191,7 @@
 
     <section id="standards" class="py-16 sm:py-20 border-b border-white/10">
       <div class="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
-        <div class="surface p-6 sm:p-9 grid lg:grid-cols-[1fr_1.3fr] gap-8 items-center reveal">
+        <div class="surface p-6 sm:p-9 lg:pl-12 lg:pr-8 grid lg:grid-cols-[1fr_1.3fr] gap-8 items-center reveal">
           <div><p class="eyebrow mb-3">Safety / quality / governance — 06</p><h2 class="display text-3xl sm:text-4xl font-bold tracking-tight">Engineering confidence is earned.</h2><p class="text-xs leading-6 text-slate-400 mt-4 max-w-md">A project-specific HSE plan, competent supervision, documented inspection points and traceable quality records should underpin every delivery package.</p></div>
           <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
             <div class="border border-white/10 p-4"><div class="mono text-blue text-xl">HSE</div><div class="text-[.65rem] text-slate-400 mt-2">Risk-led site controls</div></div>
@@ -194,7 +206,7 @@
 
     <section class="py-20 sm:py-28 relative overflow-hidden">
       <div class="absolute inset-0 blueprint opacity-40"></div><div class="relative mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
-        <div class="surface p-7 sm:p-12 lg:p-16 flex flex-col lg:flex-row lg:items-end justify-between gap-8 reveal"><div><p class="eyebrow mb-4">Next step / 07</p><h2 class="display text-4xl sm:text-6xl font-bold tracking-[-.07em] max-w-3xl">Have a complex site or a serious scope?</h2><p class="text-sm text-slate-400 mt-5 max-w-xl leading-6">Bring us the brief. We’ll structure the technical conversation around location, ground conditions, scope, interfaces and delivery priorities.</p></div><button class="btn btn-red shrink-0" data-open-drawer>Start an engineering brief <span>↗</span></button></div>
+        <div class="surface p-7 sm:p-12 lg:p-16 flex flex-col lg:flex-row lg:items-end justify-between gap-8 reveal"><div><p class="eyebrow mb-4">Next step / 07</p><h2 class="display text-4xl sm:text-6xl font-bold tracking-tight leading-[1.05] max-w-3xl">Have a complex site or a serious scope?</h2><p class="text-sm text-slate-400 mt-5 max-w-xl leading-6">Bring us the brief. We’ll structure the technical conversation around location, ground conditions, scope, interfaces and delivery priorities.</p></div><button class="btn btn-red shrink-0" data-open-drawer>Start an engineering brief <span>↗</span></button></div>
       </div>
     </section>
   </main>
