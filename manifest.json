@@ -1,0 +1,21 @@
+{
+  "id": "/",
+  "name": "Haike Constructions",
+  "short_name": "Haike",
+  "description": "Civil infrastructure, deep foundations, industrial facilities and commercial structures engineered to endure.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#070A10",
+  "theme_color": "#070A10",
+  "categories": ["business", "productivity"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
