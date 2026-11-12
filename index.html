@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#070A10">
+  <meta name="description" content="Haike Constructions Limited — civil infrastructure, deep foundations, industrial facilities and commercial structures engineered to endure.">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { ink:'#070A10', steel:'#0E1420', amber:'#F59E0B', muted:'#8B96A8' }, fontFamily: { display:['Space Grotesk','sans-serif'], body:['Inter','sans-serif'], mono:['JetBrains Mono','monospace'] } } } };
+  </script>
+  <title>Haike Constructions Limited | Engineered to Endure</title>
+  <style>
+    :root{color-scheme:dark;--ink:#070A10;--steel:#0E1420;--amber:#F59E0B;--line:rgba(255,255,255,.09);--muted:#9AA5B5}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--ink);color:#F8FAFC;font-family:Inter, sans-serif;overflow-x:hidden}body.drawer-open{overflow:hidden}
+    ::selection{background:var(--amber);color:#111} :focus-visible{outline:2px solid var(--amber);outline-offset:4px}
+    .mono{font-family:'JetBrains Mono',monospace;font-variant-numeric:tabular-nums}.display{font-family:'Space Grotesk',sans-serif}
+    .hairline{border:1px solid var(--line)}.surface{background:var(--steel);border:1px solid var(--line)}
+    .blueprint{background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);background-size:64px 64px,64px 64px,16px 16px,16px 16px}
+    .hero-wash{background:radial-gradient(ellipse at 78% 42%,rgba(245,158,11,.10),transparent 34%),linear-gradient(110deg,#070A10 8%,rgba(7,10,16,.94) 48%,rgba(7,10,16,.65) 100%)}
+    .btn{min-height:48px;display:inline-flex;align-items:center;justify-content:center;gap:.65rem;padding:.85rem 1.1rem;font-size:.78rem;font-weight:600;letter-spacing:.02em;transition:transform .35s cubic-bezier(.16,1,.3,1),background .25s,border-color .25s,color .25s}.btn:hover{transform:translateY(-2px)}.btn-primary{background:var(--amber);color:#111}.btn-primary:hover{background:#FFC04A}.btn-outline{border:1px solid rgba(255,255,255,.22);color:#fff}.btn-outline:hover{border-color:var(--amber);color:var(--amber)}
+    .nav-link{font-size:.76rem;color:#B8C0CC;transition:color .2s}.nav-link:hover,.nav-link[aria-current=page]{color:var(--amber)}
+    .menu-panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s cubic-bezier(.16,1,.3,1)}.menu-panel>div{overflow:hidden}.menu-panel.open{grid-template-rows:1fr}
+    .range{appearance:none;width:100%;height:5px;background:linear-gradient(90deg,var(--amber) 0%,var(--amber) var(--progress,0%),#303948 var(--progress,0%),#303948 100%);outline:none;cursor:pointer;touch-action:pan-y}.range::-webkit-slider-thumb{appearance:none;width:22px;height:22px;border-radius:0;background:var(--amber);border:3px solid #171D27;box-shadow:0 0 0 1px var(--amber)}.range::-moz-range-thumb{width:17px;height:17px;border-radius:0;background:var(--amber);border:3px solid #171D27;box-shadow:0 0 0 1px var(--amber)}
+    .field{width:100%;min-height:48px;background:#090E17;border:1px solid rgba(255,255,255,.13);padding:.75rem .85rem;color:#F8FAFC;border-radius:0;font:inherit;font-size:.85rem}.field:focus{outline:1px solid var(--amber);border-color:var(--amber)}select.field{color-scheme:dark}
+    .filter{min-height:44px;padding:.65rem .95rem;border:1px solid var(--line);font-size:.72rem;color:#B7C0CC;transition:all .2s}.filter.active,.filter:hover{background:var(--amber);border-color:var(--amber);color:#111}
+    .project-card{transition:opacity .25s,transform .35s cubic-bezier(.16,1,.3,1)}.project-card[hidden]{display:none}.project-card:hover{transform:translateY(-4px)}
+    .schematic{background:linear-gradient(145deg,#111B2A,#0A101A);min-height:190px;position:relative;overflow:hidden}.schematic:after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:24px 24px;pointer-events:none}
+    .road-line{stroke:var(--amber);stroke-width:2;fill:none;stroke-dasharray:5 5}.blue-line{stroke:#8295AD;stroke-width:1.4;fill:none}.dim{stroke:#65758A;stroke-width:1;fill:none}
+    .stage{border-left:2px solid #394455;padding:0 0 1.1rem 1rem;position:relative}.stage:before{content:"";position:absolute;width:8px;height:8px;background:#566274;left:-5px;top:3px}.stage.active{border-color:var(--amber)}.stage.active:before{background:var(--amber);box-shadow:0 0 12px rgba(245,158,11,.55)}
+    .drawer{position:fixed;inset:0;z-index:80;visibility:hidden;pointer-events:none}.drawer.open{visibility:visible;pointer-events:auto}.drawer-backdrop{position:absolute;inset:0;background:rgba(0,0,0,.72);opacity:0;transition:opacity .3s}.drawer.open .drawer-backdrop{opacity:1}.drawer-panel{position:absolute;right:0;top:0;height:100%;height:100dvh;width:min(100%,560px);overflow:auto;background:#0B111B;border-left:1px solid var(--line);transform:translateX(102%);transition:transform .45s cubic-bezier(.16,1,.3,1);padding:1.25rem;padding-bottom:max(1.25rem,env(safe-area-inset-bottom))}.drawer.open .drawer-panel{transform:translateX(0)}
+    .eyebrow{font:600 .65rem 'JetBrains Mono',monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--amber)}.section-kicker{font:400 .66rem 'JetBrains Mono',monospace;color:#8591A2;letter-spacing:.12em;text-transform:uppercase}
+    .metric{font-family:'JetBrains Mono',monospace;font-variant-numeric:tabular-nums;letter-spacing:-.06em}
+    .capability{min-height:210px;position:relative;overflow:hidden}.capability:after{content:"";position:absolute;right:-34px;bottom:-55px;width:170px;height:170px;border:1px solid rgba(245,158,11,.17);transform:rotate(45deg);pointer-events:none}
+    .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s cubic-bezier(.16,1,.3,1)}.reveal.visible{opacity:1;transform:translateY(0)}
+    .scroll-track{scrollbar-width:thin;scrollbar-color:#566274 #111722}.scroll-track::-webkit-scrollbar{height:7px}.scroll-track::-webkit-scrollbar-track{background:#111722}.scroll-track::-webkit-scrollbar-thumb{background:#566274}
+    @media(min-width:768px){.hero-grid{min-height:690px}.drawer-panel{padding:2rem}.capability{min-height:250px}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+  </style>
+</head>
+<body>
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-amber focus:p-3 focus:text-black">Skip to content</a>
+  <header class="fixed top-0 inset-x-0 z-50 border-b border-white/10 bg-[#070A10]/85 backdrop-blur-xl">
+    <div class="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
+      <div class="h-[76px] flex items-center justify-between gap-4">
+        <a href="#top" class="flex items-center gap-3 min-w-0" aria-label="Haike Constructions home">
+          <svg width="38" height="38" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M4 34V6h8v10h16V6h8v28h-8V23H12v11H4Z" stroke="#F59E0B" stroke-width="1.7"/><path d="M4 6h32M4 34h32M20 6v28" stroke="#F59E0B" stroke-opacity=".45"/><path d="m12 16 8-10 8 10" stroke="#F59E0B" stroke-width="1.2"/></svg>
+          <span class="min-w-0"><span class="display block text-[.9rem] sm:text-base font-bold tracking-[.12em] leading-tight">HAIKE</span><span class="mono block text-[.53rem] tracking-[.16em] text-slate-400 whitespace-nowrap">CONSTRUCTIONS LTD.</span></span>
+        </a>
+        <nav class="hidden lg:flex items-center gap-8" aria-label="Main navigation">
+          <a class="nav-link" href="#capabilities">Capabilities</a><a class="nav-link" href="#projects">Case studies</a><a class="nav-link" href="#method">Our method</a><a class="nav-link" href="#standards">Standards</a>
+        </nav>
+        <div class="flex items-center gap-2">
+          <button class="btn btn-primary !min-h-[44px] !px-4 hidden sm:inline-flex" data-open-drawer>Request Tender <span aria-hidden="true">↗</span></button>
+          <button id="menuToggle" class="lg:hidden min-w-[44px] min-h-[44px] border border-white/15 flex items-center justify-center" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu"><span id="menuIcon" class="text-xl">☰</span></button>
+        </div>
+      </div>
+      <div id="mobileMenu" class="menu-panel lg:hidden"><div><nav class="grid grid-cols-2 gap-2 pb-4" aria-label="Mobile navigation"><a class="nav-link p-3 border border-white/10" href="#capabilities">Capabilities ↗</a><a class="nav-link p-3 border border-white/10" href="#projects">Case studies ↗</a><a class="nav-link p-3 border border-white/10" href="#method">Our method ↗</a><a class="nav-link p-3 border border-white/10" href="#standards">Standards ↗</a><button class="btn btn-primary col-span-2" data-open-drawer>Request Tender ↗</button></nav></div></div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" class="relative pt-[76px] overflow-hidden">
+      <div class="absolute inset-0 blueprint opacity-70"></div><div class="absolute inset-0 hero-wash"></div>
+      <div class="absolute right-[-7rem] top-36 hidden lg:block opacity-50" aria-hidden="true">
+        <svg width="650" height="560" viewBox="0 0 650 560" fill="none"><g stroke="#718198" stroke-width="1"><path d="M90 480V160l230-100 240 100v320H90Z"/><path d="M130 480V185l190-82 200 82v295M170 480V208l150-65 160 65v272M90 160h470M90 480h470"/><path d="M320 60v420M90 260h470M90 360h470" stroke-dasharray="4 7"/></g><g stroke="#F59E0B" stroke-width="1.5"><path d="M90 160 320 60l240 100M130 185l190-82 200 82M170 208l150-65 160 65"/></g><g fill="#F59E0B" font-family="monospace" font-size="10"><text x="330" y="48">STRUCTURAL GRID / A-01</text><text x="570" y="168">+12.00</text><text x="570" y="488">±0.00</text><text x="42" y="325" transform="rotate(-90 42 325)">SECTION A—A</text></g><g stroke="#718198"><path d="M70 60v440M62 60h16M62 500h16M90 520h470M90 512v16M560 512v16"/></g></svg>
+      </div>
+      <div class="relative mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
+        <div class="hero-grid grid lg:grid-cols-[1.12fr_.88fr] gap-12 lg:gap-16 items-center py-16 sm:py-24 lg:py-28">
+          <div class="max-w-[760px] relative z-10">
+            <div class="inline-flex items-center gap-2 border border-amber/35 bg-amber/5 px-3 py-2 mb-7"><span class="w-2 h-2 bg-amber animate-pulse"></span><span class="mono text-[.62rem] sm:text-xs tracking-[.07em] text-amber">COREN & NSE CERTIFIED • CIVIL & STRUCTURAL ENGINEERING</span></div>
+            <p class="section-kicker mb-4">Infrastructure / Engineering / Delivery — 01</p>
+            <h1 class="display text-[clamp(2.8rem,7.2vw,6.8rem)] font-bold tracking-[-.075em] leading-[.98] max-w-[850px]">Precision infrastructure<span class="text-amber">.</span><br>Landmark structures<br><span class="text-slate-400">built to endure.</span></h1>
+            <p class="mt-7 max-w-[590px] text-sm sm:text-base leading-7 text-slate-300">Turnkey civil engineering, deep-foundation expertise for the Niger Delta, and accountable project delivery — from first ground investigation to final commissioning.</p>
+            <div class="flex flex-col sm:flex-row gap-3 mt-8">
+              <a href="#estimator" class="btn btn-primary">Launch Scope & Timeline Estimator <span>↘</span></a>
+              <a href="#projects" class="btn btn-outline">Explore Case Studies <span>↗</span></a>
+            </div>
+            <div class="grid grid-cols-3 gap-3 sm:gap-6 mt-12 pt-6 border-t border-white/15 max-w-[640px]">
+              <div><div class="metric text-xl sm:text-2xl text-amber">15<span class="text-sm">+</span></div><div class="mono text-[.55rem] sm:text-[.62rem] text-slate-400 mt-1">YRS PEDIGREE</div></div>
+              <div><div class="metric text-xl sm:text-2xl text-amber">100<span class="text-sm">%</span></div><div class="mono text-[.55rem] sm:text-[.62rem] text-slate-400 mt-1">HSE COMMITMENT</div></div>
+              <div><div class="metric text-xl sm:text-2xl text-amber">TURNKEY</div><div class="mono text-[.55rem] sm:text-[.62rem] text-slate-400 mt-1">DELIVERY MODEL</div></div>
+            </div>
+          </div>
+          <div class="relative z-10 lg:pl-4">
+            <div class="surface p-4 sm:p-5 relative">
+              <div class="flex justify-between items-center border-b border-white/10 pb-3 mb-4"><span class="eyebrow">Engineering intelligence / 001</span><span class="mono text-[.6rem] text-slate-500">HK—SYS / LIVE</span></div>
+              <svg viewBox="0 0 520 310" class="w-full" role="img" aria-label="Technical line drawing of a high-rise building and deep pile foundations">
+                <g stroke="#52647A" stroke-width="1" fill="none"><path d="M55 250H470M85 250V80h160v170M105 80V250M145 80V250M185 80V250M225 80V250M85 110h160M85 145h160M85 180h160M85 215h160"/><path d="M300 250V125h120v125M320 125v125M360 125v125M400 125v125M300 155h120M300 190h120M300 220h120"/><path d="M55 250h415M55 260h415M55 270h415" stroke-dasharray="3 5"/></g>
+                <g stroke="#F59E0B" fill="none" stroke-width="1.7"><path d="M85 80 165 35l80 45M300 125l60-38 60 38"/><path d="M120 250v43M155 250v43M190 250v43M225 250v43M335 250v43M375 250v43M415 250v43"/><path d="M115 293h120M330 293h95"/></g>
+                <g fill="#8B9AAF" font-family="monospace" font-size="9"><text x="88" y="20">ELEVATION / NORTH</text><text x="310" y="73">PILE CAP DETAIL</text><text x="430" y="286">-18.0M</text><text x="12" y="255">GL</text></g>
+                <g stroke="#F59E0B" stroke-width="1" stroke-dasharray="3 4"><path d="M265 35V295M45 250H480"/></g>
+              </svg>
+              <div class="grid grid-cols-2 gap-3 mt-2">
+                <div class="bg-black/20 p-3"><div class="mono text-[.57rem] text-slate-500">DESIGN APPROACH</div><div class="text-xs mt-1 font-medium">Ground-up precision</div></div>
+                <div class="bg-black/20 p-3"><div class="mono text-[.57rem] text-slate-500">DELIVERY FOCUS</div><div class="text-xs mt-1 font-medium">Safety / Programme / QA</div></div>
+              </div>
+              <div class="absolute -right-2 -top-2 bg-amber text-black mono text-[.58rem] px-2 py-1">FIG. 01 / CONCEPT</div>
+            </div>
+            <p class="mono text-[.58rem] text-slate-500 mt-3 text-right">ILLUSTRATIVE STRUCTURAL SCHEMATIC — NOT FOR CONSTRUCTION</p>
+          </div>
+        </div>
+      </div>
+      <div class="border-y border-white/10 bg-[#0B111B]">
+        <div class="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10 py-3 flex flex-wrap gap-x-8 gap-y-2 items-center justify-between"><span class="section-kicker">Built around measurable delivery</span><span class="mono text-[.62rem] text-slate-400">01 / GEOTECHNICAL INTELLIGENCE</span><span class="mono text-[.62rem] text-slate-400">02 / STRUCTURAL INTEGRITY</span><span class="mono text-[.62rem] text-slate-400">03 / PROGRAMME CONTROL</span></div>
+      </div>
+    </section>
+
+    <section id="estimator" class="py-20 sm:py-28 border-b border-white/10">
+      <div class="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10 reveal"><div><p class="eyebrow mb-3">Interactive project planning / 02</p><h2 class="display text-4xl sm:text-5xl font-bold tracking-[-.06em]">Scope before groundbreak.</h2></div><p class="text-sm leading-6 text-slate-400 max-w-md">Configure a preliminary project profile. The output is an indicative planning model — final duration and foundation design require site investigation, design development and a verified programme.</p></div>
+        <div class="grid lg:grid-cols-[1.05fr_.95fr] surface reveal">
+          <div class="p-5 sm:p-8 lg:p-10 border-b lg:border-b-0 lg:border-r border-white/10">
+            <div class="flex items-center justify-between mb-7"><span class="eyebrow">01 / Define project parameters</span><span class="mono text-[.6rem] text-slate-500">INPUT / 04</span></div>
+            <div class="space-y-7">
+              <div><label for="sector" class="block text-xs font-semibold mb-2">Sector type</label><select id="sector" class="field"><option value="highrise">Commercial High-Rise</option><option value="road">Civil Roadworks & Drainage</option><option value="warehouse">Industrial Logistics Warehouse</option><option value="estate">Luxury Residential Estate</option></select></div>
+              <div><div class="flex justify-between gap-3 items-end mb-3"><label for="scale" class="text-xs font-semibold">Project scale</label><div class="text-right"><output id="scaleValue" for="scale" class="metric text-2xl text-amber">5,000</output><span id="scaleUnit" class="mono text-[.62rem] text-slate-400 ml-2">SQM</span></div></div><input id="scale" class="range" type="range" min="500" max="25000" step="500" value="5000" aria-label="Project scale"><div class="flex justify-between mono text-[.58rem] text-slate-500 mt-3"><span id="scaleMin">500 SQM</span><span id="scaleMax">25,000 SQM</span></div></div>
+              <div><label for="terrain" class="block text-xs font-semibold mb-2">Terrain / project region</label><select id="terrain" class="field"><option value="ph">Port Harcourt / Niger Delta — high water table</option><option value="lagos">Lagos — coastal / mixed ground</option><option value="abuja">Abuja (FCT) — lateritic / rocky zones</option><option value="south">South-East Corridor — variable residual soils</option></select></div>
+              <div class="border-t border-white/10 pt-5"><p class="mono text-[.6rem] text-slate-500 mb-3">MODEL ASSUMPTIONS</p><p class="text-xs text-slate-400 leading-5">Planning ranges include design coordination, procurement allowances and staged execution. They exclude client approval delays, exceptional ground remediation and statutory review periods.</p></div>
+            </div>
+          </div>
+          <div class="p-5 sm:p-8 lg:p-10 bg-[#0A1019]">
+            <div class="flex items-center justify-between mb-7"><span class="eyebrow">02 / Calculated telemetry</span><span class="mono text-[.6rem] text-amber">● MODEL ACTIVE</span></div>
+            <div class="grid grid-cols-2 gap-3 mb-6">
+              <div class="border border-white/10 p-4"><div class="mono text-[.58rem] text-slate-500">EST. DURATION</div><div class="metric text-3xl sm:text-4xl mt-2 text-amber"><span id="duration">14</span><span class="text-sm ml-1">MOS</span></div><p class="text-[.65rem] text-slate-500 mt-2">Indicative programme</p></div>
+              <div class="border border-white/10 p-4"><div class="mono text-[.58rem] text-slate-500">SCOPE INDEX</div><div class="metric text-3xl sm:text-4xl mt-2"><span id="scopeIndex">M</span><span class="text-sm ml-1 text-slate-400">CLASS</span></div><p class="text-[.65rem] text-slate-500 mt-2">Relative project scale</p></div>
+            </div>
+            <div class="border border-white/10 p-4 mb-6"><div class="mono text-[.58rem] text-slate-500 mb-2">RECOMMENDED FOUNDATION APPROACH</div><div id="foundation" class="display text-lg font-semibold">Deep bored concrete piling</div><p id="foundationNote" class="text-xs text-slate-400 mt-2 leading-5">Preliminary option for soft alluvial deposits and elevated groundwater conditions; confirm through geotechnical investigation.</p></div>
+            <div class="mb-7"><div class="flex justify-between items-center mb-4"><span class="mono text-[.6rem] text-slate-400">EXECUTION ROADMAP</span><span class="mono text-[.58rem] text-slate-600">04 STAGES</span></div><div id="roadmap" class="grid grid-cols-2 sm:grid-cols-4 gap-x-3 gap-y-4"><div class="stage active"><div class="mono text-[.58rem] text-amber">01</div><div class="text-[.67rem] mt-1">Geotech & Survey</div></div><div class="stage active"><div class="mono text-[.58rem] text-amber">02</div><div class="text-[.67rem] mt-1">Substructure & Piling</div></div><div class="stage"><div class="mono text-[.58rem] text-slate-500">03</div><div class="text-[.67rem] mt-1">Superstructure</div></div><div class="stage"><div class="mono text-[.58rem] text-slate-500">04</div><div class="text-[.67rem] mt-1">MEP & Commissioning</div></div></div></div>
+            <button id="lockSpec" class="btn btn-primary w-full">Lock Specification & Request Engineering Brief <span>↗</span></button>
+            <p class="mono text-[.55rem] text-slate-600 text-center mt-3">NON-BINDING PRELIMINARY ESTIMATE / SUBJECT TO TECHNICAL REVIEW</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="capabilities" class="py-20 sm:py-28 bg-[#090E17] border-b border-white/10">
+      <div class="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
+        <div class="grid lg:grid-cols-[.7fr_1.3fr] gap-8 lg:gap-16 mb-12 reveal"><div><p class="eyebrow mb-3">Technical capabilities / 03</p><h2 class="display text-4xl sm:text-5xl font-bold tracking-[-.06em]">Built for the<br><span class="text-slate-500">complex brief.</span></h2></div><p class="text-sm leading-7 text-slate-400 max-w-xl lg:pt-8">A coordinated engineering capability across the assets that move people, materials and economies. One accountable delivery structure, from ground conditions to handover.</p></div>
+        <div class="grid md:grid-cols-6 gap-3">
+          <article class="capability md:col-span-4 surface p-6 sm:p-8 reveal"><div class="flex justify-between"><span class="eyebrow">01 / Core discipline</span><span class="mono text-xs text-slate-500">CIV—01</span></div><div class="mt-16 sm:mt-20 max-w-lg"><h3 class="display text-3xl sm:text-4xl font-bold tracking-tight">Civil & Heavy Infrastructure</h3><p class="text-sm text-slate-400 leading-6 mt-3 max-w-md">Highways, bridges, culverts, flood-control channels and integrated urban drainage engineered for demanding operating environments.</p><div class="mono text-[.62rem] text-amber mt-5">ROAD NETWORKS / BRIDGES / DRAINAGE</div></div></article>
+          <article class="capability md:col-span-2 surface p-6 sm:p-8 reveal"><div class="flex justify-between"><span class="eyebrow">02 / Groundworks</span><span class="mono text-xs text-slate-500">FND—02</span></div><div class="mt-12"><h3 class="display text-2xl font-bold">Deep Foundation & Piling</h3><p class="text-sm text-slate-400 leading-6 mt-3">Bored piles, pile caps and soil-stabilisation strategies for complex Niger Delta ground conditions.</p><div class="mono text-[.6rem] text-amber mt-5">GEOTECH / PILING / STABILISATION</div></div></article>
+          <article class="capability md:col-span-3 surface p-6 sm:p-8 reveal"><div class="flex justify-between"><span class="eyebrow">03 / Built assets</span><span class="mono text-xs text-slate-500">BLD—03</span></div><div class="mt-12"><h3 class="display text-2xl sm:text-3xl font-bold">Industrial & Commercial Complexes</h3><p class="text-sm text-slate-400 leading-6 mt-3 max-w-md">Steel-frame logistics warehouses, industrial facilities, commercial towers and high-performance building envelopes.</p><div class="mono text-[.6rem] text-amber mt-5">WAREHOUSING / HIGH-RISE / INDUSTRIAL</div></div></article>
+          <article class="capability md:col-span-3 surface p-6 sm:p-8 reveal"><div class="flex justify-between"><span class="eyebrow">04 / Delivery systems</span><span class="mono text-xs text-slate-500">PMO—04</span></div><div class="mt-12"><h3 class="display text-2xl sm:text-3xl font-bold">Turnkey Project Management & QA/QC</h3><p class="text-sm text-slate-400 leading-6 mt-3 max-w-md">Programme controls, procurement, concrete cube testing, inspection plans, technical submittals and commissioning coordination.</p><div class="mono text-[.6rem] text-amber mt-5">QA/QC / HSE / PROJECT CONTROLS</div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="py-20 sm:py-28 border-b border-white/10">
+      <div class="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-9 reveal"><div><p class="eyebrow mb-3">Selected portfolio / 04</p><h2 class="display text-4xl sm:text-5xl font-bold tracking-[-.06em]">Evidence in the ground.</h2></div><p class="text-sm text-slate-400 max-w-sm leading-6">Explore representative project profiles and delivery scopes. Illustrative portfolio entries are provided for this prototype and should be replaced with verified company projects before publication.</p></div>
+        <div class="flex flex-wrap gap-2 mb-7 reveal" role="group" aria-label="Filter case studies"><button class="filter active" data-filter="all" aria-pressed="true">All projects</button><button class="filter" data-filter="civil" aria-pressed="false">Civil works</button><button class="filter" data-filter="industrial" aria-pressed="false">Industrial</button><button class="filter" data-filter="commercial" aria-pressed="false">Commercial</button></div>
+        <div id="projectGrid" class="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
+          <article class="project-card surface reveal" data-category="industrial"><div class="schematic p-5"><div class="absolute z-10 top-4 left-4 mono text-[.58rem] text-amber">PLATE / IND—014</div><svg viewBox="0 0 500 220" class="relative z-[1] w-full h-full" role="img" aria-label="Schematic of a logistics terminal with steel portal frames"><g class="blue-line"><path d="M35 180 90 55h320l55 125M65 180V80h370v100M65 110h370M65 145h370M115 80v100M185 80v100M255 80v100M325 80v100M395 80v100"/><path d="M90 55 250 18l160 37M90 55v-20h320v20"/></g><g class="road-line"><path d="M65 180h370M90 55l160-37 160 37"/></g><g class="dim"><path d="M65 195h370M65 190v10M435 190v10"/></g><g fill="#9AA5B5" font-size="9" font-family="monospace"><text x="190" y="211">PORTAL FRAME / TYP.</text><text x="350" y="44">A—A</text></g></svg></div><div class="p-5"><div class="flex justify-between gap-3"><span class="eyebrow">Industrial / Logistics</span><span class="mono text-[.58rem] text-slate-500">PH—01</span></div><h3 class="display text-xl font-bold mt-3">Trans-Amadi Heavy Logistics Terminal</h3><p class="text-xs leading-5 text-slate-400 mt-2">Concept scope: heavy-duty yard, steel portal-frame warehouse and stormwater management infrastructure.</p><div class="flex flex-wrap gap-2 mt-4"><span class="mono text-[.56rem] border border-white/10 px-2 py-1 text-slate-400">STEEL FRAME</span><span class="mono text-[.56rem] border border-white/10 px-2 py-1 text-slate-400">DRAINAGE</span></div><div class="border-t border-white/10 mt-5 pt-4 flex justify-between"><span class="mono text-[.58rem] text-slate-500">SCOPE PROFILE</span><span class="mono text-[.62rem] text-amber">MULTI-PHASE</span></div></div></article>
+          <article class="project-card surface reveal" data-category="civil"><div class="schematic p-5"><div class="absolute z-10 top-4 left-4 mono text-[.58rem] text-amber">PLATE / CIV—022</div><svg viewBox="0 0 500 220" class="relative z-[1] w-full h-full" role="img" aria-label="Schematic of dual carriageway and drainage culverts"><g class="blue-line"><path d="M25 110h450M25 70h450M25 150h450M70 35l90 150M160 35l90 150M250 35l90 150M340 35l90 150"/></g><g class="road-line"><path d="M25 92h450M25 128h450"/></g><g stroke="#8295AD" stroke-width="1" fill="none"><path d="M40 160v25h70v-25M390 160v25h70v-25M40 172h70M390 172h70"/></g><g fill="#9AA5B5" font-size="9" font-family="monospace"><text x="180" y="20">ROAD CENTRELINE</text><text x="155" y="205">CROSS-DRAINAGE / SECTION</text></g></svg></div><div class="p-5"><div class="flex justify-between gap-3"><span class="eyebrow">Civil works / Transport</span><span class="mono text-[.58rem] text-slate-500">NG—02</span></div><h3 class="display text-xl font-bold mt-3">East-West Corridor Drainage & Dualization</h3><p class="text-xs leading-5 text-slate-400 mt-2">Concept scope: carriageway upgrades, culvert crossings, lined channels and resilient roadside drainage.</p><div class="flex flex-wrap gap-2 mt-4"><span class="mono text-[.56rem] border border-white/10 px-2 py-1 text-slate-400">ROADWORKS</span><span class="mono text-[.56rem] border border-white/10 px-2 py-1 text-slate-400">FLOOD CONTROL</span></div><div class="border-t border-white/10 mt-5 pt-4 flex justify-between"><span class="mono text-[.58rem] text-slate-500">SCOPE PROFILE</span><span class="mono text-[.62rem] text-amber">CORRIDOR WORKS</span></div></div></article>
+          <article class="project-card surface reveal" data-category="commercial"><div class="schematic p-5"><div class="absolute z-10 top-4 left-4 mono text-[.58rem] text-amber">PLATE / COM—031</div><svg viewBox="0 0 500 220" class="relative z-[1] w-full h-full" role="img" aria-label="Schematic elevation of a multi-storey commercial plaza"><g class="blue-line"><path d="M135 190V40h230v150M155 40V190M195 40V190M235 40V190M275 40V190M315 40V190M345 40V190M135 70h230M135 105h230M135 140h230M135 175h230"/></g><g class="road-line"><path d="M120 190h260M135 40l115-22 115 22"/></g><g class="dim"><path d="M110 40v150M103 40h14M103 190h14"/></g><g fill="#9AA5B5" font-size="9" font-family="monospace"><text x="180" y="13">FRONT ELEVATION</text><text x="65" y="120">G+4</text></g></svg></div><div class="p-5"><div class="flex justify-between gap-3"><span class="eyebrow">Commercial / Buildings</span><span class="mono text-[.58rem] text-slate-500">PH—03</span></div><h3 class="display text-xl font-bold mt-3">GRA Phase II Commercial Plaza</h3><p class="text-xs leading-5 text-slate-400 mt-2">Concept scope: multi-storey reinforced-concrete frame, retail floorplates and coordinated building services.</p><div class="flex flex-wrap gap-2 mt-4"><span class="mono text-[.56rem] border border-white/10 px-2 py-1 text-slate-400">RC FRAME</span><span class="mono text-[.56rem] border border-white/10 px-2 py-1 text-slate-400">MEP</span></div><div class="border-t border-white/10 mt-5 pt-4 flex justify-between"><span class="mono text-[.58rem] text-slate-500">SCOPE PROFILE</span><span class="mono text-[.62rem] text-amber">VERTICAL BUILD</span></div></div></article>
+        </div>
+        <div id="noProjects" class="hidden border border-white/10 p-8 text-center text-sm text-slate-400">No projects match this filter.</div>
+      </div>
+    </section>
+
+    <section id="method" class="py-20 sm:py-28 bg-[#090E17] border-b border-white/10">
+      <div class="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
+        <div class="grid lg:grid-cols-[.8fr_1.2fr] gap-12 reveal"><div><p class="eyebrow mb-3">Delivery methodology / 05</p><h2 class="display text-4xl sm:text-5xl font-bold tracking-[-.06em]">Control at every<br><span class="text-slate-500">interface.</span></h2><p class="text-sm text-slate-400 leading-7 mt-5 max-w-md">Disciplined execution depends on decisions made early, measurable hold points and clear ownership across every work package.</p></div><div class="space-y-0">
+          <div class="flex gap-5 py-5 border-b border-white/10"><span class="mono text-amber text-sm">01</span><div><h3 class="display text-xl font-bold">Investigate & define</h3><p class="text-xs text-slate-400 mt-2 leading-5">Topographic survey, geotechnical investigation, design criteria and a coordinated scope baseline.</p></div><span class="mono text-[.58rem] text-slate-600 ml-auto">DISCOVER</span></div>
+          <div class="flex gap-5 py-5 border-b border-white/10"><span class="mono text-amber text-sm">02</span><div><h3 class="display text-xl font-bold">Engineer & procure</h3><p class="text-xs text-slate-400 mt-2 leading-5">Design coordination, method statements, material submittals, procurement planning and risk reviews.</p></div><span class="mono text-[.58rem] text-slate-600 ml-auto">PREPARE</span></div>
+          <div class="flex gap-5 py-5 border-b border-white/10"><span class="mono text-amber text-sm">03</span><div><h3 class="display text-xl font-bold">Construct & verify</h3><p class="text-xs text-slate-400 mt-2 leading-5">Supervised execution, inspection and test plans, quality records, HSE monitoring and programme reporting.</p></div><span class="mono text-[.58rem] text-slate-600 ml-auto">DELIVER</span></div>
+          <div class="flex gap-5 py-5"><span class="mono text-amber text-sm">04</span><div><h3 class="display text-xl font-bold">Commission & hand over</h3><p class="text-xs text-slate-400 mt-2 leading-5">Systems testing, snag close-out, as-built documentation, training and formal handover.</p></div><span class="mono text-[.58rem] text-slate-600 ml-auto">COMPLETE</span></div>
+        </div></div>
+      </div>
+    </section>
+
+    <section id="standards" class="py-16 sm:py-20 border-b border-white/10">
+      <div class="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
+        <div class="surface p-6 sm:p-9 grid lg:grid-cols-[1fr_1.3fr] gap-8 items-center reveal">
+          <div><p class="eyebrow mb-3">Safety / quality / governance — 06</p><h2 class="display text-3xl sm:text-4xl font-bold tracking-tight">Engineering confidence is earned.</h2><p class="text-xs leading-6 text-slate-400 mt-4 max-w-md">A project-specific HSE plan, competent supervision, documented inspection points and traceable quality records should underpin every delivery package.</p></div>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div class="border border-white/10 p-4"><div class="mono text-amber text-xl">HSE</div><div class="text-[.65rem] text-slate-400 mt-2">Risk-led site controls</div></div>
+            <div class="border border-white/10 p-4"><div class="mono text-amber text-xl">QA/QC</div><div class="text-[.65rem] text-slate-400 mt-2">Inspection & test plans</div></div>
+            <div class="border border-white/10 p-4"><div class="mono text-amber text-xl">ISO</div><div class="text-[.65rem] text-slate-400 mt-2">Standards alignment</div></div>
+            <div class="border border-white/10 p-4"><div class="mono text-amber text-xl">COREN</div><div class="text-[.65rem] text-slate-400 mt-2">Professional compliance</div></div>
+          </div>
+        </div>
+        <p class="mono text-[.56rem] text-slate-600 mt-3">CERTIFICATION, MEMBERSHIP, INCIDENT AND PERFORMANCE CLAIMS MUST BE VERIFIED AGAINST CURRENT COMPANY RECORDS BEFORE PUBLIC RELEASE.</p>
+      </div>
+    </section>
+
+    <section class="py-20 sm:py-28 relative overflow-hidden">
+      <div class="absolute inset-0 blueprint opacity-40"></div><div class="relative mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
+        <div class="surface p-7 sm:p-12 lg:p-16 flex flex-col lg:flex-row lg:items-end justify-between gap-8 reveal"><div><p class="eyebrow mb-4">Next step / 07</p><h2 class="display text-4xl sm:text-6xl font-bold tracking-[-.07em] max-w-3xl">Have a complex site or a serious scope?</h2><p class="text-sm text-slate-400 mt-5 max-w-xl leading-6">Bring us the brief. We’ll structure the technical conversation around location, ground conditions, scope, interfaces and delivery priorities.</p></div><button class="btn btn-primary shrink-0" data-open-drawer>Start an engineering brief <span>↗</span></button></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10 bg-[#05080D]">
+    <div class="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10 py-8 flex flex-col sm:flex-row gap-4 justify-between items-start sm:items-center"><div class="flex items-center gap-3"><svg width="30" height="30" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M4 34V6h8v10h16V6h8v28h-8V23H12v11H4Z" stroke="#F59E0B" stroke-width="1.7"/></svg><div><div class="display font-bold tracking-[.12em] text-sm">HAIKE CONSTRUCTIONS LTD.</div><div class="mono text-[.55rem] text-slate-500 mt-1">ENGINEERED TO ENDURE</div></div></div><div class="mono text-[.58rem] text-slate-600">© <span id="year"></span> HAIKE CONSTRUCTIONS LIMITED. ALL RIGHTS RESERVED.</div><a href="#top" class="mono text-[.6rem] text-slate-400 hover:text-amber">BACK TO TOP ↑</a></div>
+    <div class="border-t border-white/5 py-3 px-4 text-center mono text-[.52rem] text-slate-700">PROTOTYPE CONTENT — REPLACE ILLUSTRATIVE PROJECTS, CONTACT DETAILS AND COMPLIANCE CLAIMS WITH VERIFIED COMPANY INFORMATION.</div>
+  </footer>
+
+  <div id="tenderDrawer" class="drawer" aria-hidden="true">
+    <button class="drawer-backdrop" data-close-drawer aria-label="Close tender drawer"></button>
+    <aside class="drawer-panel" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
+      <div class="flex justify-between items-start border-b border-white/10 pb-5"><div><p class="eyebrow mb-2">Tender / consultation intake</p><h2 id="drawerTitle" class="display text-3xl font-bold">Start the brief.</h2><p class="text-xs text-slate-400 mt-2">Share the essentials. Your WhatsApp message will be prepared for review before sending.</p></div><button id="closeDrawer" class="min-w-[44px] min-h-[44px] border border-white/15 text-xl" aria-label="Close dialog">×</button></div>
+      <form id="tenderForm" class="space-y-5 py-6">
+        <div><label for="contactName" class="block text-xs font-semibold mb-2">Your name / organisation *</label><input id="contactName" class="field" name="name" autocomplete="name" required placeholder="Name or company"></div>
+        <div class="grid sm:grid-cols-2 gap-4"><div><label for="contactEmail" class="block text-xs font-semibold mb-2">Email address</label><input id="contactEmail" class="field" name="email" type="email" autocomplete="email" placeholder="name@company.com"></div><div><label for="contactPhone" class="block text-xs font-semibold mb-2">Phone number *</label><input id="contactPhone" class="field" name="phone" type="tel" autocomplete="tel" required placeholder="+234 ..."></div></div>
+        <div><label for="briefType" class="block text-xs font-semibold mb-2">Enquiry type</label><select id="briefType" class="field" name="type"><option>Tender invitation</option><option>New project consultation</option><option>Prequalification request</option><option>Technical partnership</option></select></div>
+        <div><label for="briefMessage" class="block text-xs font-semibold mb-2">Project notes</label><textarea id="briefMessage" class="field min-h-[110px] resize-y" name="message" placeholder="Project location, scope, tender deadline, drawings available..."></textarea></div>
+        <div class="border border-white/10 bg-black/20 p-4"><div class="mono text-[.6rem] text-amber mb-2">ESTIMATOR SPECIFICATION</div><p id="specSummary" class="text-xs text-slate-400 leading-6">No estimator specification selected. You can still send a general enquiry.</p></div>
+        <button type="submit" class="btn btn-primary w-full">Prepare WhatsApp Engineering Brief <span>↗</span></button>
+        <p class="mono text-[.55rem] text-slate-600 text-center">YOUR DEVICE WILL OPEN WHATSAPP WITH A PRE-FILLED MESSAGE. REVIEW BEFORE SENDING.</p>
+      </form>
+    </aside>
+  </div>
+
+  <script>
+  (() => {
+    'use strict';
+    const $ = (selector, root=document) => root.querySelector(selector);
+    const $$ = (selector, root=document) => [...root.querySelectorAll(selector)];
+    const sector = $('#sector'), scale = $('#scale'), terrain = $('#terrain');
+    let lockedSpec = null, lastFocused = null;
+    const sectorData = {
+      highrise:{unit:'SQM',min:500,max:25000,step:500,base:8,rate:0.00115,foundation:{ph:'Deep bored concrete piling',lagos:'Bored piles / piled raft (subject to investigation)',abuja:'Raft or pad foundations (subject to investigation)',south:'Bored piles or reinforced raft (subject to investigation)'}},
+      road:{unit:'KM',min:1,max:50,step:1,base:5,rate:0.34,foundation:{ph:'Ground improvement with deep drainage and localised piling as required',lagos:'Improved subgrade with engineered pavement and drainage',abuja:'Compacted lateritic subgrade with designed pavement layers',south:'Stabilised subgrade with site-specific drainage'}},
+      warehouse:{unit:'SQM',min:500,max:25000,step:500,base:5,rate:0.00065,foundation:{ph:'Driven or bored piles with reinforced pile caps (subject to investigation)',lagos:'Piled or ground-improved foundation solution',abuja:'Isolated pad foundations or raft (subject to investigation)',south:'Pad, raft or piled solution based on soil profile'}},
+      estate:{unit:'SQM',min:500,max:25000,step:500,base:7,rate:0.0009,foundation:{ph:'Piled raft / deep bored piles where required',lagos:'Raft or piled foundation based on settlement analysis',abuja:'Strip, pad or raft foundation subject to soil conditions',south:'Reinforced strip or raft foundation subject to investigation'}}
+    };
+    const terrainNames={ph:'Port Harcourt / Niger Delta',lagos:'Lagos',abuja:'Abuja (FCT)',south:'South-East Corridor'};
+    const sectorNames={highrise:'Commercial High-Rise',road:'Civil Roadworks & Drainage',warehouse:'Industrial Logistics Warehouse',estate:'Luxury Residential Estate'};
+    function updateEstimator(){
+      const config=sectorData[sector.value];
+      scale.min=config.min;scale.max=config.max;scale.step=config.step;
+      const value=Math.min(config.max,Math.max(config.min,Number(scale.value)||config.min));
+      scale.value=value;
+      const progress=((value-config.min)/(config.max-config.min))*100;
+      scale.style.setProperty('--progress',progress+'%');
+      $('#scaleValue').textContent=value.toLocaleString('en-NG');
+      $('#scaleUnit').textContent=config.unit;
+      $('#scaleMin').textContent=config.min.toLocaleString('en-NG')+' '+config.unit;
+      $('#scaleMax').textContent=config.max.toLocaleString('en-NG')+' '+config.unit;
+      let months=Math.ceil(config.base+value*config.rate);
+      if(terrain.value==='ph') months+=2;
+      else if(terrain.value==='lagos') months+=1;
+      if(sector.value==='road' && value>25) months+=2;
+      months=Math.max(4,months);
+      $('#duration').textContent=months;
+      $('#scopeIndex').textContent=value<5000?'S':value<15000?'M':'L';
+      $('#foundation').textContent=config.foundation[terrain.value];
+      const note=terrain.value==='ph'?'High groundwater and compressible alluvial soils can influence settlement, dewatering and foundation selection. Confirm using boreholes, in-situ tests and laboratory data.':terrain.value==='lagos'?'Coastal and reclaimed ground conditions vary significantly; assess groundwater, fill history and settlement risk.':terrain.value==='abuja'?'Lateritic and locally rocky profiles require confirmation of bearing strata, excavation conditions and founding depth.':'Residual soil profiles vary across the corridor; verify bearing capacity, groundwater and slope stability at the site.';
+      $('#foundationNote').textContent=note;
+      const roadmap=$('#roadmap');
+      const activeStages=months<=8?2:months<=16?3:4;
+      $$('.stage',roadmap).forEach((el,i)=>{el.classList.toggle('active',i<activeStages);const n=$('.mono',el);n.classList.toggle('text-amber',i<activeStages);n.classList.toggle('text-slate-500',i>=activeStages)});
+      lockedSpec={sector:sectorNames[sector.value],scale:value.toLocaleString('en-NG')+' '+config.unit,terrain:terrainNames[terrain.value],duration:months+' months',foundation:config.foundation[terrain.value]};
+    }
+    [sector,scale,terrain].forEach(el=>el.addEventListener('input',updateEstimator));
+    updateEstimator();
+
+    function openDrawer(){
+      const drawer=$('#tenderDrawer');lastFocused=document.activeElement;drawer.classList.add('open');drawer.setAttribute('aria-hidden','false');document.body.classList.add('drawer-open');
+      $('#specSummary').textContent=lockedSpec?lockedSpec.sector+' · '+lockedSpec.scale+' · '+lockedSpec.terrain+' · '+lockedSpec.duration+' indicative duration · '+lockedSpec.foundation:'No estimator specification selected. You can still send a general enquiry.';
+      window.setTimeout(()=>$('#contactName').focus(),120);
+    }
+    function closeDrawer(){
+      const drawer=$('#tenderDrawer');drawer.classList.remove('open');drawer.setAttribute('aria-hidden','true');document.body.classList.remove('drawer-open');if(lastFocused&&typeof lastFocused.focus==='function')lastFocused.focus();
+    }
+    $$('[data-open-drawer]').forEach(btn=>btn.addEventListener('click',openDrawer));
+    $$('[data-close-drawer]').forEach(btn=>btn.addEventListener('click',closeDrawer));
+    $('#closeDrawer').addEventListener('click',closeDrawer);
+    document.addEventListener('keydown',e=>{if(e.key==='Escape'&&$('#tenderDrawer').classList.contains('open'))closeDrawer();if(e.key==='Tab'&&$('#tenderDrawer').classList.contains('open')){const items=$$('button:not([disabled]),input:not([disabled]),select:not([disabled]),textarea:not([disabled]),a[href]', $('#tenderDrawer')).filter(el=>el.offsetParent!==null);if(!items.length)return;const first=items[0],last=items[items.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}});
+    $('#lockSpec').addEventListener('click',()=>{openDrawer();$('#briefMessage').value='Please prepare an engineering brief for the selected project specification.'});
+
+    $('#tenderForm').addEventListener('submit',e=>{
+      e.preventDefault();
+      const data=new FormData(e.currentTarget);
+      const lines=['HAIKE CONSTRUCTIONS — ENGINEERING ENQUIRY','', 'Name / Organisation: '+data.get('name'),'Phone: '+data.get('phone'),'Email: '+(data.get('email')||'Not provided'),'Enquiry: '+data.get('type'),''];
+      if(lockedSpec){lines.push('ESTIMATOR SPECIFICATION', 'Sector: '+lockedSpec.sector,'Scale: '+lockedSpec.scale,'Region: '+lockedSpec.terrain,'Indicative duration: '+lockedSpec.duration,'Foundation approach: '+lockedSpec.foundation,'');}
+      lines.push('Project notes: '+(data.get('message')||'Not provided'));
+      const message=encodeURIComponent(lines.join('\n'));
+      // Replace with Haike's verified WhatsApp business number before launch.
+      const businessNumber='2348000000000';
+      if(businessNumber==='2348000000000'){alert('The enquiry is ready, but the company WhatsApp number has not yet been configured. Please update businessNumber in index.html with Haike’s verified number.');return;}
+      window.open('https://wa.me/'+businessNumber+'?text='+message,'_blank','noopener,noreferrer');
+    });
+
+    // Case study category filtering
+    const filterButtons=$$('[data-filter]'), cards=$$('.project-card');
+    filterButtons.forEach(button=>button.addEventListener('click',()=>{
+      const category=button.dataset.filter;let count=0;
+      filterButtons.forEach(b=>{const active=b===button;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active))});
+      cards.forEach(card=>{const show=category==='all'||card.dataset.category===category;card.hidden=!show;if(show)count++});
+      $('#noProjects').classList.toggle('hidden',count!==0);
+    }));
+
+    // Accessible mobile menu drawer
+    const menuToggle=$('#menuToggle'), mobileMenu=$('#mobileMenu');
+    menuToggle.addEventListener('click',()=>{
+      const open=!mobileMenu.classList.contains('open');mobileMenu.classList.toggle('open',open);menuToggle.setAttribute('aria-expanded',String(open));menuToggle.setAttribute('aria-label',open?'Close navigation menu':'Open navigation menu');$('#menuIcon').textContent=open?'×':'☰';
+    });
+    $$('a[href^="#"]',mobileMenu).forEach(link=>link.addEventListener('click',()=>{mobileMenu.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');menuToggle.setAttribute('aria-label','Open navigation menu');$('#menuIcon').textContent='☰'}));
+
+    // Progressive reveal; content remains visible if observers are unavailable.
+    if('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+      const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.08});
+      $$('.reveal').forEach(el=>observer.observe(el));
+    }else $$('.reveal').forEach(el=>el.classList.add('visible'));
+    $('#year').textContent=new Date().getFullYear();
+
+    // PWA service worker: safe on HTTPS / localhost only.
+    if('serviceWorker' in navigator && (location.protocol==='https:'||location.hostname==='localhost')){
+      window.addEventListener('load',()=>navigator.serviceWorker.register('/sw.js').catch(err=>console.warn('Service worker registration failed:',err)));
+    }
+  })();
+  </script>
+</body>
+</html>
