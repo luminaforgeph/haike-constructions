@@ -55,11 +55,56 @@
     .scroll-track{scrollbar-width:thin;scrollbar-color:#566274 #111722}.scroll-track::-webkit-scrollbar{height:7px}.scroll-track::-webkit-scrollbar-track{background:#111722}.scroll-track::-webkit-scrollbar-thumb{background:#566274}
     @media(min-width:768px){.hero-grid{min-height:690px}.drawer-panel{padding:2rem}.capability{min-height:250px}}
     @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+  
+    /* White-first editorial theme */
+    :root{color-scheme:light;--ink:#FFFFFF;--steel:#F5F7FB;--blue:#173B8F;--purple:#7137B8;--red:#C62828;--white:#FFFFFF;--amber:#F59E0B;--line:rgba(23,35,55,.12);--muted:#667085}
+    body{background:#FFFFFF!important;color:#172033!important}
+    header{background:rgba(255,255,255,.92)!important;border-color:rgba(23,35,55,.12)!important;box-shadow:0 8px 30px rgba(23,35,55,.045)}
+    .surface{background:#FFFFFF!important;border:1px solid rgba(23,35,55,.12)!important;box-shadow:0 12px 34px rgba(23,35,55,.045)}
+    .hero-wash{background:radial-gradient(ellipse at 78% 42%,rgba(113,55,184,.075),transparent 34%),radial-gradient(ellipse at 18% 78%,rgba(23,59,143,.075),transparent 38%),linear-gradient(110deg,rgba(255,255,255,.98) 8%,rgba(255,255,255,.92) 58%,rgba(246,248,252,.72) 100%)!important}
+    .blueprint{background-image:linear-gradient(rgba(23,35,55,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(23,35,55,.055) 1px,transparent 1px),linear-gradient(rgba(23,35,55,.022) 1px,transparent 1px),linear-gradient(90deg,rgba(23,35,55,.022) 1px,transparent 1px)!important}
+    .schematic{background:linear-gradient(145deg,#F1F4F9,#FAFBFD)!important}
+    .schematic:after{background-image:linear-gradient(rgba(23,35,55,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(23,35,55,.055) 1px,transparent 1px)!important}
+    .drawer-panel{background:#FFFFFF!important;border-color:rgba(23,35,55,.14)!important;color:#172033}
+    .drawer-backdrop{background:rgba(16,24,40,.42)!important}
+    .field{background:#FFFFFF!important;color:#172033!important;border-color:rgba(23,35,55,.2)!important}
+    .field::placeholder{color:#98A2B3}
+    select.field{color-scheme:light}
+    .range{background:linear-gradient(90deg,var(--amber) 0%,var(--amber) var(--progress,0%),#D9DFE9 var(--progress,0%),#D9DFE9 100%)!important}
+    .range::-webkit-slider-thumb{border-color:#FFFFFF!important}
+    .range::-moz-range-thumb{border-color:#FFFFFF!important}
+    .filter{color:#475467!important;border-color:rgba(23,35,55,.16)!important}
+    .filter.active,.filter:hover{background:var(--amber)!important;border-color:var(--amber)!important;color:#172033!important}
+    .nav-link{color:#475467!important}
+    .nav-link:hover,.nav-link[aria-current=page]{color:var(--purple)!important}
+    .btn-outline{color:#173B8F!important;border-color:rgba(23,59,143,.35)!important}
+    .btn-outline:hover{color:#7137B8!important;border-color:#7137B8!important}
+    .eyebrow{color:#7137B8!important}
+    .section-kicker,.micro-label{color:#667085!important}
+    .stage{border-color:#D0D5DD!important}
+    .stage:before{background:#98A2B3!important}
+    .stage.active{border-color:var(--purple)!important}
+    .stage.active:before{background:var(--purple)!important}
+    .scroll-track{scrollbar-color:#98A2B3 #E9EDF3}
+    .scroll-track::-webkit-scrollbar-track{background:#E9EDF3}
+    .scroll-track::-webkit-scrollbar-thumb{background:#98A2B3}
+    [class*="border-white/"]{border-color:rgba(23,35,55,.13)!important}
+    [class*="border-amber/"]{border-color:rgba(245,158,11,.48)!important}
+    [class*="bg-black/20"]{background:rgba(23,35,55,.045)!important}
+    .text-slate-300{color:#475467!important}
+    .text-slate-400{color:#667085!important}
+    .text-slate-500{color:#667085!important}
+    .text-slate-600{color:#7B8494!important}
+    .text-slate-700{color:#475467!important}
+    .reveal{will-change:transform,opacity}
+    footer{background:#F5F7FB!important;color:#172033!important;border-color:rgba(23,35,55,.12)!important}
+    @media(prefers-reduced-motion:reduce){.reveal{will-change:auto}}
+
   </style>
 </head>
 <body>
   <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-amber focus:p-3 focus:text-black">Skip to content</a>
-  <header class="fixed top-0 inset-x-0 z-50 border-b border-white/10 bg-[#070A10]/85 backdrop-blur-xl">
+  <header class="fixed top-0 inset-x-0 z-50 border-b border-white/10 bg-white/90 backdrop-blur-xl">
     <div class="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
       <div class="h-[76px] flex items-center justify-between gap-4">
         <a href="#top" class="flex items-center gap-3 min-w-0" aria-label="Haike Constructions home">
@@ -120,7 +165,7 @@
           </div>
         </div>
       </div>
-      <div class="border-y border-white/10 bg-[#0B111B]">
+      <div class="border-y border-white/10 bg-[#F2F5FA]">
         <div class="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10 py-3 flex flex-wrap gap-x-8 gap-y-2 items-center justify-between"><span class="section-kicker">Built around measurable delivery</span><span class="mono text-[.62rem] text-slate-400">01 / GEOTECHNICAL INTELLIGENCE</span><span class="mono text-[.62rem] text-slate-400">02 / STRUCTURAL INTEGRITY</span><span class="mono text-[.62rem] text-slate-400">03 / PROGRAMME CONTROL</span></div>
       </div>
     </section>
@@ -138,7 +183,7 @@
               <div class="border-t border-white/10 pt-5"><p class="mono text-[.6rem] text-slate-500 mb-3">MODEL ASSUMPTIONS</p><p class="text-xs text-slate-400 leading-5">Planning ranges include design coordination, procurement allowances and staged execution. They exclude client approval delays, exceptional ground remediation and statutory review periods.</p></div>
             </div>
           </div>
-          <div class="p-5 sm:p-8 lg:p-10 bg-[#0A1019]">
+          <div class="p-5 sm:p-8 lg:p-10 bg-[#F2F5FA]">
             <div class="flex items-center justify-between mb-7"><span class="eyebrow">02 / Calculated telemetry</span><span class="mono text-[.6rem] text-blue">● MODEL ACTIVE</span></div>
             <div class="grid grid-cols-2 gap-3 mb-6">
               <div class="border border-white/10 p-4"><div class="mono text-[.58rem] text-slate-500">EST. DURATION</div><div class="metric tabular-nums font-mono text-3xl sm:text-4xl mt-2 text-blue"><span id="duration" class="metric tabular-nums">14</span><span class="text-sm ml-1">MOS</span></div><p class="text-[.65rem] text-slate-500 mt-2">Indicative programme</p></div>
@@ -153,7 +198,7 @@
       </div>
     </section>
 
-    <section id="capabilities" class="py-20 sm:py-28 bg-[#090E17] border-b border-white/10">
+    <section id="capabilities" class="py-20 sm:py-28 bg-[#F5F7FB] border-b border-white/10">
       <div class="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
         <div class="grid lg:grid-cols-[.7fr_1.3fr] gap-8 lg:gap-16 mb-12 reveal"><div><p class="eyebrow mb-3">Technical capabilities / 03</p><h2 class="display text-4xl sm:text-5xl font-bold tracking-tight leading-[1.05]">Built for the<br><span class="text-slate-500">complex brief.</span></h2></div><p class="text-sm leading-7 text-slate-400 max-w-xl lg:pt-8">A coordinated engineering capability across the assets that move people, materials and economies. One accountable delivery structure, from ground conditions to handover.</p></div>
         <div class="grid md:grid-cols-6 gap-3">
@@ -211,7 +256,7 @@
     </section>
   </main>
 
-  <footer class="border-t border-white/10 bg-[#05080D]">
+  <footer class="border-t border-white/10 bg-[#F5F7FB]">
     <div class="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10 py-8 flex flex-col sm:flex-row gap-4 justify-between items-start sm:items-center"><div class="flex items-center gap-3"><svg width="30" height="30" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M4 34V6h8v10h16V6h8v28h-8V23H12v11H4Z" stroke="#173B8F" stroke-width="1.7"/><path d="M4 6h32M4 34h32" stroke="#7137B8"/><path d="m12 16 8-10 8 10" stroke="#C62828" stroke-width="1.6"/></svg><div><div class="display font-bold tracking-[.12em] text-sm">HAIKE CONSTRUCTIONS LTD.</div><div class="mono text-[.55rem] text-slate-500 mt-1">ENGINEERED TO ENDURE</div></div></div><div class="mono text-[.58rem] text-slate-600">© <span id="year"></span> HAIKE CONSTRUCTIONS LIMITED. ALL RIGHTS RESERVED.</div><a href="#top" class="mono text-[.6rem] text-slate-400 hover:text-blue">BACK TO TOP ↑</a></div>
     <div class="border-t border-white/5 py-3 px-4 text-center mono text-[.52rem] text-slate-700">PROTOTYPE CONTENT — REPLACE ILLUSTRATIVE PROJECTS, CONTACT DETAILS AND COMPLIANCE CLAIMS WITH VERIFIED COMPANY INFORMATION.</div>
   </footer>
